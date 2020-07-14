@@ -23,14 +23,16 @@
 
 
 .overall-total, .tip-total {
-    font-size: 15px;
     color: #505A5B;
-    font-weight: bold;
     display: flex;
     flex-direction: column;
-    padding: 10px;
 }
 
+.overall-total, .tip-total, .split-bill {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
 
 
 .screen .input-number {
@@ -38,7 +40,7 @@
     height: 40px;
     margin: 10px 0px;
     border: none;
-    padding: 25px 0px;
+    padding: 25px 0px 25px 1px;
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
@@ -52,4 +54,29 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+
+
+.split-bill {
+    display: flex;
+    outline: 1px solid red;
+    justify-content: space-between;
+}
+
+.people-numbers{
+    display: flex;
+    outline: 1px solid red;
+}
+
+.minus, .plus{
+    border-radius: 50%;
+    padding: 5px;
+    min-width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.split-total{
+    outline: 1px solid red;
+    align-items: flex-end;
 }
