@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.screen {
+    width: 500px;
+    height: 400px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 3px solid #3F37AE;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.screen .input-data {
+    padding: 30px 0px 20px 20px;
+}
+
+
+.overall-total, .tip-total {
+    font-size: 15px;
+    color: #505A5B;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+
+.screen .input-number {
+    width: 200px;
+    height: 40px;
+    margin: 10px 0px;
+    border: none;
+    padding: 25px 0px;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+.screen .input-number:focus {
+    caret-color: rgb(178,77,96);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
