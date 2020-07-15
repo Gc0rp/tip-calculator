@@ -21,6 +21,7 @@
             <div class="tip-total">
                 <label for="tip">Tip</label>
                 <input type="number" class="input-number" id="tip" placeholder="10"/>
+                <p class="percentage">%</p>
             </div>
 
 
@@ -29,24 +30,23 @@
                     
                     <h1>Split</h1>
                     
-                    <div class="">
-                        <button class="minus">-</button>
-                        <p class="people-number js-people-number">0</p>
-                        <button class="plus">+</button>
+                    <div class="people-count">
+                        <button class="minus-people">-</button>
+                        <p class="number-of-people js-number-of-people">0</p>
+                        <button class="plus-people">+</button>
                     </div>
                 
                 </section>
 
                 <section class="split-total">
                     <h1>Split Total</h1>
-                    <p>0.00</p>
+                    <p class="per-person-amount">0.00</p>
                 </section>
             </div>
-
         </div>
-
-
-        
     </div>
+
+
+    <script src="./calculateTip.js"></script>
 </body>
 </html>
