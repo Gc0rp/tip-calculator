@@ -43,7 +43,6 @@
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    outline: 1px solid red;
 }
 
 .screen .input-number:focus {
@@ -58,7 +57,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 .percentage{
     font-size: 24px;
-
+    display: inline-block;
+    text-align: right;
+    color: black;
 }
 
 
@@ -88,6 +89,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: #AFACE0;
     color: #3F37AE;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .number-of-people{
